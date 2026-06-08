@@ -67,3 +67,13 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+## Langkah-Langkah Pemasangan
+1. Download ZIP dan extract ke laragon/www
+2. Setelah extract, open di IDE masing-masing dan open MANTU-main dengan cara cd MANTU-main (2 kali jika ada folder didalam folder/cd MANTU-main/MANTU-main)
+3. Buka laragon dan nyalakan Apache & SQL
+4. Buka terminal di IDE sesuai path file dan ketik "composer install"
+5. Buat dan impor database yang telah diberikan (appci4_mantu.sql)
+6. Setelah selesai, ketik "php spark migrate --seed"
+7. Semua langkah telah selesai, silakan "php spark serve" untuk langsung mencoba
+8. Register jika belum ada akun
